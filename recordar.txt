@@ -1,0 +1,32 @@
+            Instalar .venv si no esta la carpeta: (esto se hace solo una vez)
+
+py -3 -m venv .venv (crea la varpeta .venv)
+
+.venv\Scripts\activate (activa en .venv)
+
+pip install Flask (instala flask)
+
+            para que se cree un archivo donde despues se puedan descargar todos los archivos usados
+
+pip freeze > requirements.txt
+
+---------------------------------------
+            
+            Al iniciar todos los dias, hacer esto en la consola:
+
+cd .venv/scripts (entrar en .venv y tambien a scripts)
+
+activate (activa en .venv)
+
+cd.. (salir de scripts)
+
+cd.. (salir de .vent, carpeta no del modo (.venv))
+
+pip install flask (instala flask)
+
+pip install -r requirements.txt (intala todos los archivos de requerimientos que son necesarios)
+
+flask --app app.py run --debug (te crea una direccion de navegacion y con debuger muestra esos errores por ese navegador, ademas de consola)
+
+---------------------------------------
+

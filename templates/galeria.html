@@ -1,0 +1,80 @@
+
+<!-- includes flask - HEAD -->
+{% include 'defaults/head.html' %}
+
+<body>
+
+    <!-- includes flask - HEADER -->
+    {% include 'defaults/header.html' %}
+
+    <div class="cont-titulo-gal">
+        <h1>Galería</h1>
+        <h2>
+            Disfruta de las mejores fotografías capturadas en momentos que marcaron un antes y despúes en la vida de muchas personas.
+        </h2>
+    </div>
+    
+   
+    <div class="cont-galerias">
+        <div class="img-flotante">
+            <img src="/static/img/galeria/NoviaSfondo3.png" alt="">
+        </div>
+        <div class="div-secciones">
+            <br>
+        </div>
+        <div class="titulo-gal"> Momentos Inolvidables</div>
+        <div class="cont-gal1">
+            <img src="/static/img/galeria/pareja/beso.jpeg" alt="">
+            <img src="/static/img/galeria/pareja/beso2.jpeg" alt="">
+            <img src="/static/img/galeria/pareja/recienCasados2.jpeg" alt="">
+            <img src="/static/img/galeria/pareja/padrinos1.svg" alt="">
+            <img src="/static/img/galeria/pareja/baile8.jpeg" alt="">
+        </div>
+        <div class="div-decciones">
+            <br>
+        </div>
+        <div class="titulo-gal"> Recuerdos Únicos</div>
+        <div class="cont-gal1 gal2">
+            <img src="/static/img/galeria/pareja/pareja1.svg" alt="">
+            <img src="/static/img/galeria/pareja/pareja2.svg" alt="">
+            <img src="/static/img/galeria/salon/panoramica.svg" alt="">
+            <img src="/static/img/galeria/salon/mesas2.svg" alt="">
+            <img src="/static/img/conoceme/anillos.jpg" alt="">
+        </div>
+        <div class=" img-flotante2">
+            <img src="/static/img/galeria/NoviaSfondo3.png" alt="">
+            <button class="btn contactame">Contactame</button>
+        </div>
+        <div class="div-decciones">
+            <br>
+        </div>
+        <div class="titulo-gal"> Mejores Momentos</div>
+        <div class="cont-gal1 gal3">
+            <img src="/static/img/galeria/pareja/baile4.jpeg" alt="">
+            <img src="/static/img/galeria/pareja/parejaAltar6.svg" alt="">
+            <img src="/static/img/galeria/pareja/iglesia.svg" alt="">
+            <img src="/static/img/galeria/pareja/baile2.jpeg" alt="">
+            <img src="/static/img/galeria/pareja/baile.jpeg" alt="">
+        </div>
+        <div class="div-decciones">
+            <br>
+        </div>
+        <div class="cont-cont-contacto">
+
+            <div class=" cont-final-contacto">
+                <img class="img-btn" src="/static/img/galeria/NoviaSfondo1.png" alt="">
+                <button class="btn contactame"><a href="/conoceme">Conoceme más</a> </button>
+                <img class="img-btn" src="/static/img/galeria/NoviaSfondo1.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- includes flask - FOOTER -->
+    {% include 'defaults/footer.html' %}
+
+
+<script src="{{url_for('static', filename='js/galeria/imagenes.js')}}"></script>
+
+</body>
+</html>

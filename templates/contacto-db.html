@@ -1,0 +1,38 @@
+
+<!-- includes flask - HEAD -->
+{% include 'defaults/head.html' %}
+
+<body>
+
+    <!-- includes flask - HEADER -->
+    {% include 'defaults/header.html' %}
+
+<h1 class="titulo-db">Base de datos</h1>
+
+<div class="muestra-contactos">
+    <div>
+        {% for i in contactos %}
+        <div>
+            {{i[1]}}   //   {{i[2]}}   // <br>
+            {{i[3]}}   //   {{i[4]}}   // <br>
+            {{i[5]}} <br>
+            <br>
+        </div>
+        <div class="btn-edit-borr">
+            <a href="/contacto-db/contacto-editar/{{i[0]}}">Editar</a>  
+            <a href="/contacto-db/borrar_contacto/{{i[0]}}">Borrar</a>
+        </div>
+        <br>
+        <hr>
+        <br>
+        {% endfor %}
+    </div>
+</div>
+
+
+    <div class="no-footer">
+        <p>2024 - Derechos reservados</p>
+    </div>
+
+</body>
+</html>

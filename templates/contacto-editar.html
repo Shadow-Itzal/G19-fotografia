@@ -1,0 +1,50 @@
+<!-- includes flask - HEAD -->
+{% include 'defaults/head.html' %}
+
+<body>
+
+    <!-- includes flask - HEADER -->
+    {% include 'defaults/header.html' %}
+
+    <h1 class="titulo-db">Editar datos</h1>
+
+<div id="formulario">
+    <form action="/contacto-db/update_contacto" method="POST">
+        <br>
+        <!-- este es id en modo oculto -->
+        <input type="hidden" name="id" value="{{contactos[0]}}">
+        <div>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" value="{{contactos[1]}}">
+        </div>
+        <div>
+            <label for="mail">Mail:</label><br>
+            <input type="text" name="email" value="{{contactos[2]}}">
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="text" name="telefono" value="{{contactos[3]}}">
+        </div>
+        <div>
+            <label for="fecha">Fecha del evento:</label><br>
+            <input type="date" name="fecha_evento" value="{{contactos[4]}}">
+        </div>
+        <div>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="" maxlength="1500" cols="25" rows="10">{{contactos[5]}}</textarea>
+        </div>
+
+        <div>
+            <button type="submit"> Guardar cambios </button>
+        </div>
+        <br>
+    
+    </form>   
+</div>
+
+    <div class="no-footer">
+        <p>2024 - Derechos reservados</p>
+    </div>
+
+</body>
+</html>
